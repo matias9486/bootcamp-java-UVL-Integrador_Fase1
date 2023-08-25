@@ -49,8 +49,8 @@ hr {
 .bg-image-home{
     background-image: linear-gradient(
         to right,
-        rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.5)
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.3)
     ),  
     url('../assets/images/home-sm.jpg');        
     background-repeat: no-repeat;
@@ -70,12 +70,24 @@ hr {
     background-position: center;    
 }
 
+.bg-image-proyecto{
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.3)
+    ),  
+    url('../assets/images/proyecto-sm.webp');        
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;    
+}
+
 @media screen and (min-width:768px) {
     .bg-image-home{
         background-image: linear-gradient(
             to right,
-            rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3)
         ),  
         url('../assets/images/home-md.jpg');    
     }
@@ -88,14 +100,26 @@ hr {
         ),  
         url('../assets/images/mision-md.webp');    
     }
+
+    .bg-image-proyecto{
+        background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3)
+        ),  
+        url('../assets/images/proyecto-md.webp');        
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;    
+    }
 }
 
 @media screen and (min-width:992px) {
     .bg-image-home{
         background-image: linear-gradient(
             to right,
-            rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3)
         ),  
         url('../assets/images/home-lg.jpg');    
     }
@@ -108,19 +132,21 @@ hr {
         ),  
         url('../assets/images/mision-lg.webp');    
     }
+
+    .bg-image-proyecto{
+        background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3)
+        ),  
+        url('../assets/images/proyecto-lg.webp');        
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;    
+    }
 }
 
-.bg-image-actividades{
-    background-image: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.5)
-    ),  
-    url('../assets/images/actividades-sm.jpg');        
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;    
-}
+
 
 
 
