@@ -1,8 +1,10 @@
 :root{
     --clr-primary:#72bc4c;
     --clr-secondary:#1074ba;
-    --clr-terciary:#b8f243;
+    --clr-terciary:#b8f243;    
+    --clr-terciary-transparent:rgba(184, 242, 67, 0.500);   
     --clr-quaternary:#1590e7;
+    --clr-quaternary-transparent:rgba(21, 144, 231, 0.500);
     --clr-background:#ebebeb;    
     
     --h-450:450px;
@@ -24,6 +26,14 @@
 
 .my-bg-terciary{
     background-color: var(--clr-terciary);
+}
+
+.my-bg-terciary-transparent{
+    background-color: var(--clr-terciary-transparent);
+}
+
+.my-bg-quaternary-transparent{
+    background-color: var(--clr-quaternary-transparent);
 }
 
 .my-text-primary{
@@ -49,8 +59,8 @@ hr {
 .bg-image-home{
     background-image: linear-gradient(
         to right,
-        rgba(0, 0, 0, 0.3),
-        rgba(0, 0, 0, 0.3)
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
     ),  
     url('../assets/images/home-sm.jpg');        
     background-repeat: no-repeat;
@@ -73,10 +83,22 @@ hr {
 .bg-image-proyecto{
     background-image: linear-gradient(
         to right,
-        rgba(0, 0, 0, 0.3),
-        rgba(0, 0, 0, 0.3)
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
     ),  
     url('../assets/images/proyecto-sm.webp');        
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;    
+}
+
+.bg-image-actividades{
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+    ),  
+    url('../assets/images/actvidades-sm.webp');        
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;    
@@ -86,8 +108,8 @@ hr {
     .bg-image-home{
         background-image: linear-gradient(
             to right,
-            rgba(0, 0, 0, 0.3),
-            rgba(0, 0, 0, 0.3)
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)
         ),  
         url('../assets/images/home-md.jpg');    
     }
@@ -104,13 +126,19 @@ hr {
     .bg-image-proyecto{
         background-image: linear-gradient(
             to right,
-            rgba(0, 0, 0, 0.3),
-            rgba(0, 0, 0, 0.3)
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)
         ),  
-        url('../assets/images/proyecto-md.webp');        
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;    
+        url('../assets/images/proyecto-md.webp');              
+    }
+
+    .bg-image-actividades{
+        background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)
+        ),  
+        url('../assets/images/actvidades-md.webp');             
     }
 }
 
@@ -118,8 +146,8 @@ hr {
     .bg-image-home{
         background-image: linear-gradient(
             to right,
-            rgba(0, 0, 0, 0.3),
-            rgba(0, 0, 0, 0.3)
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)
         ),  
         url('../assets/images/home-lg.jpg');    
     }
@@ -136,13 +164,22 @@ hr {
     .bg-image-proyecto{
         background-image: linear-gradient(
             to right,
-            rgba(0, 0, 0, 0.3),
-            rgba(0, 0, 0, 0.3)
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)
         ),  
         url('../assets/images/proyecto-lg.webp');        
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;    
+    }
+
+    .bg-image-actividades{
+        background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)
+        ),  
+        url('../assets/images/actvidades-lg.webp');             
     }
 }
 
