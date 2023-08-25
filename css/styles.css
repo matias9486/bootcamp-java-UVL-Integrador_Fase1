@@ -1,0 +1,148 @@
+:root{
+    --clr-primary:#72bc4c;
+    --clr-secondary:#1074ba;
+    --clr-terciary:#b8f243;
+    --clr-quaternary:#1590e7;
+    --clr-background:#ebebeb;    
+    
+    --h-450:450px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.my-bg-grey{
+    background-color: var(--clr-background);
+}
+
+.my-bg-primary{
+    background-color: var(--clr-primary);
+}
+
+.my-bg-terciary{
+    background-color: var(--clr-terciary);
+}
+
+.my-text-primary{
+    color: var(--clr-primary);
+}
+
+.my-text-secondary{
+    color: var(--clr-secondary);
+}
+
+.my-text-quaternary{
+    color: var(--clr-quaternary);
+}
+
+hr {
+    height: 2px;    
+}
+
+.h-450{
+    height: var(--h-450);
+}
+
+.bg-image-home{
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ),  
+    url('../assets/images/home-sm.jpg');        
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;    
+}
+
+@media screen and (min-width:768px) {
+    .bg-image-home{
+        background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+        ),  
+        url('../assets/images/home-md.jpg');    
+    }
+}
+
+@media screen and (min-width:992px) {
+    .bg-image-home{
+        background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+        ),  
+        url('../assets/images/home-lg.jpg');    
+    }
+}
+
+.bg-image-mision{
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ),  
+    url('../assets/images/mision-lg.webp');        
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;    
+}
+
+.bg-image-actividades{
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ),  
+    url('../assets/images/actividades-sm.jpg');        
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;    
+}
+
+
+
+/*-----animacion para el titulo------*/
+.title-effect {
+    animation-duration: 1.5s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+
+/*-----estilos para el nav------*/
+li > a.nav-link:hover {
+    border-left-style: solid;
+    border-left-color: var(--clr-quaternary);
+    color: var(--clr-quaternary)!important;
+}
+
+@media (min-width:992px) {
+    li > a.nav-link{
+        text-decoration: none;
+        background-image: linear-gradient(var(--clr-terciary), var(--clr-terciary));
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size .3s;
+    }
+
+    li > a.nav-link:hover{
+        background-size: 100% 2px;
+    }
+}
