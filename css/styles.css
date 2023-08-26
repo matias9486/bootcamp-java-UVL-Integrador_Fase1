@@ -104,6 +104,18 @@ hr {
     background-position: center;    
 }
 
+.bg-image-colabora{
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+    ),  
+    url('../assets/images/colaborar-sm.webp');        
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;    
+}
+
 @media screen and (min-width:768px) {
     .bg-image-home{
         background-image: linear-gradient(
@@ -139,6 +151,15 @@ hr {
             rgba(0, 0, 0, 0.4)
         ),  
         url('../assets/images/actvidades-md.webp');             
+    }
+
+    .bg-image-colabora{
+        background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)
+        ),  
+        url('../assets/images/colaborar-md.webp');                
     }
 }
 
@@ -181,11 +202,17 @@ hr {
         ),  
         url('../assets/images/actvidades-lg.webp');             
     }
+
+    .bg-image-colabora{
+        background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)
+        ),  
+        url('../assets/images/colaborar-lg.webp');             
+        background-position: top;
+    }
 }
-
-
-
-
 
 /*-----animacion para el titulo------*/
 .title-effect {
