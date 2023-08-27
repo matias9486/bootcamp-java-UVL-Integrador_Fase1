@@ -7,7 +7,9 @@
     --clr-quaternary-transparent:rgba(21, 144, 231, 0.500);
     --clr-background:#ebebeb;    
     
-    --h-450:450px;
+    --sm-height:250px;
+    --md-height:400px;
+    --lg-height:450px;
 }
 
 *{
@@ -52,8 +54,8 @@ hr {
     height: 2px;    
 }
 
-.h-450{
-    height: var(--h-450);
+.my-height{
+    height: var(--sm-height);
 }
 
 .bg-image-home{
@@ -117,6 +119,10 @@ hr {
 }
 
 @media screen and (min-width:768px) {
+    .my-height{
+        height: var(--md-height);
+    }
+
     .bg-image-home{
         background-image: linear-gradient(
             to right,
@@ -164,6 +170,10 @@ hr {
 }
 
 @media screen and (min-width:992px) {
+    .my-height{
+        height: var(--lg-height);
+    }
+
     .bg-image-home{
         background-image: linear-gradient(
             to right,
