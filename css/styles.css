@@ -18,6 +18,7 @@
     box-sizing: border-box;
 }
 
+/*colores de fondo*/
 .my-bg-grey{
     background-color: var(--clr-background);
 }
@@ -38,6 +39,7 @@
     background-color: var(--clr-quaternary-transparent);
 }
 
+/*color de texto*/
 .my-text-primary{
     color: var(--clr-primary);
 }
@@ -58,6 +60,7 @@ hr {
     height: var(--sm-height);
 }
 
+/*imagenes de fondo*/
 .bg-image-home{
     background-image: linear-gradient(
         to right,
@@ -118,6 +121,7 @@ hr {
     background-position: center;    
 }
 
+/*media queries*/
 @media screen and (min-width:768px) {
     .my-height{
         height: var(--md-height);
