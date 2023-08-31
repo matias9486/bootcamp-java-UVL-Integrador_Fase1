@@ -121,6 +121,11 @@ hr {
     background-position: center;    
 }
 
+.objetivo{
+    height:150px;
+    width: 150px;    
+}
+
 /*media queries*/
 @media screen and (min-width:768px) {
     .my-height{
@@ -170,7 +175,7 @@ hr {
             rgba(0, 0, 0, 0.4)
         ),  
         url('../assets/images/colaborar-md.webp');                
-    }
+    }    
 }
 
 @media screen and (min-width:992px) {
@@ -225,7 +230,7 @@ hr {
         ),  
         url('../assets/images/colaborar-lg.webp');             
         background-position: top;
-    }
+    }    
 }
 
 /*-----animacion para el titulo------*/
